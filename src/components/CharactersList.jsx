@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import Character from "./Character";
 import Button from "./Button";
+import Spinner from "./Spinner";
 
 // NAVIGATION
 function NavPage({ page, setPage }) {
   return (
     <>
       <button
-        className="text-xl text-white bg-black py-2 border-4 px-5 md:hidden fixed right-1 top-2 z-40 font-bold rounded-full shadow-md shadow-black "
+        className="text-xl text-white bg-black py-2 border-4 px-5 md:hidden fixed right-1 top-2 z-40 font-bold rounded-full shadow-md shadow-black select-none"
         onClick={() => {
           const nav = document.querySelector(".header");
           nav.classList.toggle("-translate-y-full");
-          console.log(nav);
         }}
       >
         Menu
@@ -61,7 +61,7 @@ function CharactersList() {
       <NavPage page={page} setPage={setPage} />
 
       {loading ? (
-        <h1 className="text-4xl text-center font-black">Loading...</h1>
+        <Spinner />
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10">
           {characters.map((character) => {
