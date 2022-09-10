@@ -1,1 +1,1 @@
-[![Rick-And-Morty.png](https://i.postimg.cc/HkwwCZRq/Rick-And-Morty.png)](https://rick-and-morty-kkfwhjkb5-zdc999.vercel.app/)
+[![Rick-And-Morty.png](https://i.postimg.cc/HkwwCZRq/Rick-And-Morty.png)](https://postimg.cc/0zNMYf8n)
